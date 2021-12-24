@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 console.log("Hello world");
 /*app.get("/", function(req,res){
 res.send("Hello Express");
